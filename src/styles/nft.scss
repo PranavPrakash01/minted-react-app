@@ -1,0 +1,188 @@
+/* font-family: 'Inter', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Variables */
+:root {
+  --button-gradient: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  );
+}
+
+
+
+.creator-dp {
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
+
+img.nft-grid-item.NFT-image   {
+    width: 30vw;
+}
+
+
+
+.nft-feed-card .nft-card-details p {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.nft-grid-container {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tag {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.likes {
+  position: absolute;
+  left: 0%;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+}
+
+
+.card-user {
+  max-width: 150px;
+  max-height: 200px;
+  min-width: 100px;
+  /* min-height: 200px; */
+
+  margin: auto;
+  margin-top: 10vh;
+  /* background-color: #2d2e36;
+  border: 1px solid #2d2e36; */
+  border-radius: 12px;
+  /* min-width: 200px; */
+  padding: 1rem;
+}
+
+
+
+.card-details-nft {
+  min-height: 5em;
+}
+
+.nav-pills > li > a {
+  color: rgb(253, 252, 252);
+}
+
+#username {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.bio-heading {
+  display: block;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 1.5rem;
+}
+
+.bio-description {
+  text-align: center;
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+/* Colors Related to Nav Links */
+.nav-pills > li > a.enabled.active,
+.nav-pills > li > a.home-tab:hover {
+  color: white;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.nav-pills > li > a.disabled.active,
+.nav-pills > li > a.disabled:hover {
+  color: #4f4f4f;
+}
+
+#contact-button,
+.bitclout-redirection {
+  color: #eb1484;
+
+  border: 2px;
+  border-style: solid;
+  border-color: #eb1484;
+  border-radius: 1rem;
+}
+
+.bitclout-redirection {
+  display: block;
+  text-align: center;
+  max-width: 150px;
+  margin: auto;
+}
+
+.bitclout-redirection:hover {
+  text-decoration: none;
+}
+
+#details,
+#bidders {
+  min-height: 100px;
+}
+
+.nav-pills.det .nav-link.active {
+    background: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+}
+
+// a#details-tab.nav-link:focus    {
+//     background: transparent;
+// }
+
+
+
+
+@media screen and (max-width: 1010px) {
+  #NFTGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  #NFTGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 515px) {
+  #NFTGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timer {
+    font-size: 0.75em;
+  }
+
+  .feed-card img {
+    /* max-width: 100px;
+    max-height: 100px; */
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 12px;
+    margin: auto;
+    object-fit: cover;
+    align-self: center;
+    display: block;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}

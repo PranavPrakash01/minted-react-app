@@ -1,0 +1,248 @@
+
+
+/* Turns About Tab and Contact Tab Disabled */
+/* .about-tab,
+.unclickable {
+  pointer-events: none;
+} */
+
+
+
+
+
+
+                                                                          //CSS RELATED TO BANNER
+.banner {
+  background-image: url("../images/Banner.png");
+
+  height: 286px;
+  background-size: cover;
+  border-radius: 30px;
+  margin-top: 100px;
+
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 5rem;
+}
+
+
+
+/* Styles related to the card */
+
+.user-card img {
+  max-width: 70px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 0;
+  object-fit: cover;
+  align-self: center;
+}
+
+.feed-card img,
+.featured-card img {
+  max-width: 100%;
+
+  max-height: 300px;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 12px;
+  margin: auto;
+  object-fit: cover;
+  align-self: center;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 5px;
+}
+#FeaturedGridContainer {
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  place-items: center;
+}
+
+#userGridContainer {
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#NFTGridContainer {
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.user-card {
+  max-width: 175px;
+  max-height: 200px;
+  min-width: 150px;
+  min-height: 150px;
+
+  padding: 30px;
+  margin-top: 20px;
+
+  background-color: #2d2e36;
+  border-radius: 12px;
+}
+
+.featured-card,
+.feed-card {
+  max-width: 350px;
+  max-height: 450px;
+
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+  background-color: #2d2e36;
+  border-radius: 12px;
+}
+
+.card-details {
+  padding: 8px;
+  min-height: 2em;
+
+  position: relative;
+}
+
+.tag {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.likes {
+  position: absolute;
+  left: 0%;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+}
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+
+
+                                                                                    // SELECTION OPTION STYLE
+
+    select  {
+      background: dimgrey;
+    border-radius: 0px 15px 15px;
+    padding: 5px;
+    }                
+    
+    
+    select:focus  {
+      border: none;
+    }
+
+@media screen and (max-width: 1010px) {
+  #FeaturedGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+  }
+
+  #userGridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #NFTGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  #FeaturedGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+
+  #userGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #NFTGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+
+@media screen and (max-width: 515px) {
+  #FeaturedGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+
+  #userGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #NFTGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+  }
+
+  .featured-card img,
+  .feed-card img {
+    /* max-width: 100px;
+    max-height: 100px; */
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 12px;
+    margin: auto;
+    object-fit: cover;
+    align-self: center;
+    display: block;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+
+
+.user-name {
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-weight: 400;
+}
+
+.user-card,
+.user-card:hover {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.user-card:hover  {
+  background-color: black;
+  color: grey;
+}
+
+
+
+
+
